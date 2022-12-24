@@ -115,5 +115,17 @@ public class Laptop {
         this.ssd = ssd;
     }
 
-
+    public String infoLaptop() {
+        return "\n{" +
+                "price=" + price + " руб" +
+                ", productManufacturer=" + productManufacturer +
+                ", operatingSystem=" + operatingSystem + ",\n" +
+                "\t\tscreenDiagonal=" + screenDiagonal +
+                ", color=" + color +
+                ", displayResolution=" + displayResolution + ",\n" +
+                "\t\tprocessor=" + processor +
+                ", ram=" + ram +
+                ", ssd=" + ssd +
+                "}";
+    }
 }

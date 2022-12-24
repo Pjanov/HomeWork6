@@ -5,6 +5,7 @@ import java.util.Arrays;
 
 public class Main {
     static ArrayList<Laptop> laptops = new ArrayList<>();
+
     public static void main(String[] args) {
 
         Laptop[] laptop = new Laptop[5];
@@ -24,7 +25,7 @@ public class Main {
                 "15.6 дюймов",
                 "черный",
                 "Full HD",
-                "Core i3",
+                "Intel Core i3",
                 "4 гб",
                 "128 гб");
 
@@ -59,6 +60,23 @@ public class Main {
                 "512 гб");
 
         laptops.addAll(Arrays.asList(laptop));
-        System.out.println(laptops);
+
+        getByParameter(laptops, "черный");
     }
+
+    /**
+     * <h3>Вывести элемент коллекции по параметру</h3>
+     *
+     * @param coll      коллекция
+     * @param parameter параметр
+     */
+    private static void getByParameter(ArrayList<Laptop> coll, String parameter) {
+        for (int i = 0; i < coll.size(); i++) {
+            if (coll.get(i).infoLaptop().contains(parameter)) {
+                System.out.println(coll.get(i));
+            }
+        }
+    }
+
+
 }
