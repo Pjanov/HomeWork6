@@ -1,7 +1,7 @@
 package org.example;
 
 public class Laptop {
-    public float price;
+    private float price;
     private String productManufacturer;
     private String operatingSystem;
     private String screenDiagonal;
