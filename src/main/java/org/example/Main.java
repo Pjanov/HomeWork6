@@ -2,6 +2,7 @@ package org.example;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Main {
     static ArrayList<Laptop> laptops = new ArrayList<>();
@@ -60,8 +61,19 @@ public class Main {
                 "512 гб");
 
         laptops.addAll(Arrays.asList(laptop));
-
-        getByParameter(laptops, "черный");
+        getByParameter(laptops, parameterRequest());
+    }
+    /**
+     * <h3>Запрос параметров у пользователя</h3>
+     *
+     * @return строку
+     */
+    private static String parameterRequest() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("По какому параметру вывести ноутбуки: ");
+        String res = sc.nextLine();
+        sc.close();
+        return res;
     }
 
     /**
