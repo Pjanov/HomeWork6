@@ -1,12 +1,64 @@
 package org.example;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class Main {
+    static ArrayList<Laptop> laptops = new ArrayList<>();
     public static void main(String[] args) {
 
-        Laptop laptop = new Laptop(42.435f, "Acer",
-                "Windows 10", "15.6 дюймов",
-                "Full HD", "Core i3", "4 гб", "128 гб");
+        Laptop[] laptop = new Laptop[5];
+        laptop[0] = new Laptop(36.731f,
+                "Asus",
+                "Windows 11",
+                "14 дюймов",
+                "серый",
+                "Full HD",
+                "Intel Pentium Gold",
+                "4 гб",
+                "256 гб");
 
-        System.out.println(laptop);
+        laptop[1] = new Laptop(42.435f,
+                "Acer",
+                "Windows 10",
+                "15.6 дюймов",
+                "черный",
+                "Full HD",
+                "Core i3",
+                "4 гб",
+                "128 гб");
+
+        laptop[2] = new Laptop(71.200f,
+                "Acer",
+                "Windows 11",
+                "14 дюймов",
+                "серый",
+                "Full HD",
+                "Intel Core i7",
+                "8 гб",
+                "256 гб");
+
+        laptop[3] = new Laptop(53.200f,
+                "Lenovo",
+                "Windows 11",
+                "14 дюймов",
+                "серый",
+                "Full HD",
+                "Intel Core i5",
+                "8 гб",
+                "512 гб");
+
+        laptop[4] = new Laptop(58.385f,
+                "Asus",
+                "Windows 11",
+                "14 дюймов",
+                "серый",
+                "Full HD",
+                "Intel Core i5",
+                "8 гб",
+                "512 гб");
+
+        laptops.addAll(Arrays.asList(laptop));
+        System.out.println(laptops);
     }
 }
