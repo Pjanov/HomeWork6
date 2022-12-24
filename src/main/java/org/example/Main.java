@@ -30,7 +30,7 @@ public class Main {
                 "4 гб",
                 "128 гб");
 
-        laptop[2] = new Laptop(71.200f,
+        laptop[2] = new Laptop(71.225f,
                 "Acer",
                 "Windows 11",
                 "14 дюймов",
@@ -40,7 +40,7 @@ public class Main {
                 "8 гб",
                 "256 гб");
 
-        laptop[3] = new Laptop(53.200f,
+        laptop[3] = new Laptop(53.265f,
                 "Lenovo",
                 "Windows 11",
                 "14 дюймов",
@@ -62,6 +62,7 @@ public class Main {
 
         laptops.addAll(Arrays.asList(laptop));
         getByParameter(laptops, parameterRequest());
+
     }
     /**
      * <h3>Запрос параметров у пользователя</h3>
@@ -89,6 +90,4 @@ public class Main {
             }
         }
     }
-
-
 }
