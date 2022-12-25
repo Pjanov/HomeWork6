@@ -10,7 +10,7 @@ public class Main {
     public static void main(String[] args) {
 
         Laptop[] laptop = new Laptop[5];
-        laptop[0] = new Laptop(36.731f,
+        laptop[0] = new Laptop(36_731f,
                 "Asus",
                 "Windows 11",
                 "14 дюймов",
@@ -20,7 +20,7 @@ public class Main {
                 "4 гб",
                 "256 гб");
 
-        laptop[1] = new Laptop(42.435f,
+        laptop[1] = new Laptop(42_435f,
                 "Acer",
                 "Windows 10",
                 "15.6 дюймов",
@@ -30,7 +30,7 @@ public class Main {
                 "4 гб",
                 "128 гб");
 
-        laptop[2] = new Laptop(71.225f,
+        laptop[2] = new Laptop(71_225f,
                 "Acer",
                 "Windows 11",
                 "14 дюймов",
@@ -40,7 +40,7 @@ public class Main {
                 "8 гб",
                 "256 гб");
 
-        laptop[3] = new Laptop(53.265f,
+        laptop[3] = new Laptop(53_265f,
                 "Lenovo",
                 "Windows 11",
                 "14 дюймов",
@@ -50,7 +50,7 @@ public class Main {
                 "8 гб",
                 "512 гб");
 
-        laptop[4] = new Laptop(58.385f,
+        laptop[4] = new Laptop(58_385f,
                 "Asus",
                 "Windows 11",
                 "14 дюймов",
